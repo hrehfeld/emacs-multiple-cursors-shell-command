@@ -4,7 +4,7 @@
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "25.1") (multiple-cursors "1.4.0"))
 ;; Keywords: convenience, tools, shell
-;; URL: https://example.com/multiple-cursors-shell-command
+;; URL: https://github.com/hrehfeld/emacs-multiple-cursors-shell-command
 
 ;; This file is not part of GNU Emacs.
 
