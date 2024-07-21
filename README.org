@@ -1,0 +1,31 @@
+#+TITLE: ~multiple-cursors-shell-command~
+
+
+* Install
+
+** using straight
+:PROPERTIES:
+:CREATED:  [2024-07-21 21:59:45]
+:END:
+#+begin_src emacs lisp
+(use-package multiple-cursors-shell-command
+  :ensure t
+  :straight (multiple-cursors-shell-command :type git :host github :repo "hrehfeld/emacs-multiple-cursors-shell-command"))
+#+end_src
+
+* Usage
+:PROPERTIES:
+:CREATED:  [2024-07-21 21:59:40]
+:END:
+
+Just like ~shell-command~:
+
+#+begin_src text
+Signature
+(multiple-cursors-shell-command COMMAND &optional ARG)
+
+Documentation
+Run a shell COMMAND for each cursor in multiple-cursors mode. See shell-command.
+
+With optional prefix ARG, insert output at point, just like shell-command.
+#+end_src
