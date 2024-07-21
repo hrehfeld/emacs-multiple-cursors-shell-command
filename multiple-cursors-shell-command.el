@@ -31,9 +31,11 @@
 (require 'multiple-cursors)
 
 (defun multiple-cursors-shell-command (command &optional arg)
-  "Run a shell COMMAND for each cursor in multiple-cursors mode. See `shell-command'.
+  "Run a shell COMMAND for each cursor in multiple-cursors mode..
 
-With optional prefix ARG, insert output at point, just like `shell-command'."
+With optional prefix ARG, insert output at point, just like `shell-command'.
+
+See `shell-command'."
   (interactive
    ;; Straight from shell-command
    (list (read-shell-command (if shell-command-prompt-show-cwd
