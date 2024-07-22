@@ -55,8 +55,7 @@ See `shell-command'."
    (save-excursion
      (goto-char (overlay-start cursor))
      (let ((line (buffer-substring-no-properties (line-beginning-position) (line-end-position))))
-       (setq prefix-arg arg)
-       (shell-command (concat command " " (shell-quote-argument line)))))))
+       (shell-command command arg)))))
 
 (provide 'multiple-cursors-shell-command)
 
